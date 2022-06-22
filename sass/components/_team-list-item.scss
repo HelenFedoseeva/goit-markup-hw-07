@@ -1,0 +1,48 @@
+.studio-team-list-item {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14);
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+}
+
+.studio-team-list-item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.team-description-section {
+    padding: 30px 0;
+}
+
+.team-person-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.team-person-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+    margin-bottom: 16px;
+
+}
