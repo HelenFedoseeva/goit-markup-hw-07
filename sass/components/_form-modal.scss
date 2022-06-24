@@ -19,11 +19,12 @@
     display: inline-block;
 
 
+        &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
 }
 
-.form-modal-item:not(:last-child) {
-    margin-bottom: 10px;
-}
 
 .form-modal-prompt {
     display: inline-block;
@@ -46,17 +47,17 @@
     width: 100%;
 
     transition: 250ms border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+            outline: none;
+            border-color: var(--focus-color);
+    
+        }
 }
 
-.form-modal-input:focus {
-    outline: none;
-    border-color: var(--focus-color);
 
-}
 
-.form-modal-input:focus+.form-modal-icon {
-    fill: var(--focus-color);
-}
+
 
 .form-modal-comment {
     width: 100%;
@@ -69,12 +70,14 @@
     padding: 12px 16px;
 
     transition: 250ms border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+            outline: none;
+            border-color: var(--focus-color);
+        }
 }
 
-.form-modal-comment:focus {
-    outline: none;
-    border-color: var(--focus-color);
-}
+
 
 .form-modal-icon-wrapper {
     position: relative;
@@ -91,6 +94,10 @@
     fill: currentColor;
 
     transform: translateY(-50%);
+
+    .form-modal-input:focus+ & {
+            fill: var(--focus-color);
+        }
 }
 
 
@@ -164,23 +171,27 @@
     margin-right: 9px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:focus {
+            outline: none;
+            border-color: var(--focus-color);
+        }
+
+     .form-input-checkbox:checked+ & {
+            border-color: var(--focus-color);
+            background-color: var(--focus-color);
+            background-image: url('../images/portfolio/icon/icon-check.svg');
+            background-origin: border-box;
+            background-repeat: no-repeat;
+            background-size: 13px 10px;
+            background-position: center;
+        
+                }
 }
 
-.icon-check:focus {
-    outline: none;
-    border-color: var(--focus-color);
-}
 
-.form-input-checkbox:checked+.icon-check {
-    border-color: var(--focus-color);
-    background-color: var(--focus-color);
-    background-image: url('../images/portfolio/icon/icon-check.svg');
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-size: 13px 10px;
-    background-position: center;
 
-}
 
 .form-checkbox-link {
     color: var(--focus-color);
@@ -208,10 +219,11 @@
     margin: 0 auto;
 
     transition: 250ms background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: var(--model-button);
+            cursor: pointer;
+        }
 }
 
-.form-modal-btn:hover,
-.form-modal-btn:focus {
-    background-color: var(--model-button);
-    cursor: pointer;
-}

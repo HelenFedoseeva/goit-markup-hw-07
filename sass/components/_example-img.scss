@@ -4,13 +4,16 @@
 
 }
 
-.example-img-item:not(:last-child) {
-    margin-right: 30px;
 
-}
 
 .example-img-item {
     position: relative;
+
+
+    &:not(:last-child) {
+            margin-right: 30px;
+    
+        }
 }
 
 .example-text {

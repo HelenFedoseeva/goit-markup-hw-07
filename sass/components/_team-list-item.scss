@@ -2,6 +2,11 @@
     background-color: #fff;
     text-align: center;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14);
+
+    &:not(:last-child) {
+            margin-right: 30px;
+    
+        }
 }
 
 .team-title {
@@ -19,10 +24,7 @@
     justify-content: center;
 }
 
-.studio-team-list-item:not(:last-child) {
-    margin-right: 30px;
 
-}
 
 .team-description-section {
     padding: 30px 0;

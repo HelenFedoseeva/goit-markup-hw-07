@@ -8,10 +8,10 @@
     width: 170px;
     height: 92px;
 
-}
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 
-.clients-list-item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .clients-list-link {
@@ -25,14 +25,17 @@
     color: var(--icon-border-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+                color: var(--focus-color);
+                border-color: var(--focus-color);
+        
+            }
+
 }
 
-.clients-list-link:hover,
-.clients-list-link:focus {
-    color: var(--focus-color);
-    border-color: var(--focus-color);
 
-}
 
 .clients-icon {
     width: 106px;
