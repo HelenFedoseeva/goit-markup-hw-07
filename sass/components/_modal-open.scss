@@ -14,29 +14,23 @@
 
 }
 
-.close-modal-button {
+.modal__button {
     position: absolute;
     top: 8px;
     right: 8px;
 
     width: 30px;
     height: 30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid rgb(0, 0, 0, 0.1);
+   
+    
 
-    color: #000;
-    background-color: #fff;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
-.close-modal-icon {
+.close__icon {
     width: 18px;
     height: 18px;
     fill: currentColor;
 
 }
+

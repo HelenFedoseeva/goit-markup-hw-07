@@ -6,9 +6,13 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--basic-color);
-    margin-right: 93px;
+   
 }
 
-.logo-web {
+.logo__accent {
     color: var(--focus-color);
+}
+
+.header__logo{
+    margin-right: 93px;
 }

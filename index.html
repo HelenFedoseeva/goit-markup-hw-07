@@ -11,30 +11,30 @@
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+   
 </head>
 <body>
     <header class="header">
         <div class="container flex-container">
-            <nav class="header-nav-container">
-                <a class="logo" lang="en" href=""><span class="logo-web">Web</span>Studio</a>
-                <ul class="header-list list">
-                    <li class="header-list-item"><a class="current-page header-list-item-link" href="./index.html">Студия</a></li>
-                    <li class="header-list-item"><a class="header-list-item-link" href="./portfolio.html">Портфолио</a>
+            <nav class="navigation">
+                <a class="logo header__logo" lang="en" href=""><span class="logo__accent">Web</span>Studio</a>
+                <ul class="navigation__list list">
+                    <li class="navigation__list-item"><a class="current-page navigation__list-item-link" href="./index.html">Студия</a></li>
+                    <li class="navigation__list-item"><a class="navigation__list-item-link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="header-list-item"><a class="header-list-item-link" href="">Контакты</a></li>
+                    <li class="navigation__list-item"><a class="navigation__list-item-link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="header-contacts list">
-                <li class="contacts-item">
-                    <a class="contacts-item-link" href="mailto:info@devstudio.com ">
-                        <svg class="icon-contact-item" >
+            <ul class="navigation__contacts list">
+                <li class="navigation__contacts-item">
+                    <a class="navigation__contacts-item-link" href="mailto:info@devstudio.com ">
+                        <svg class="navigation__contact-icon" >
                             <use href="./images/portfolio/icon/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li class="contacts-item">
-                    <a class="contacts-item-link" href="tel:+380961111111">
-                        <svg class="icon-contact-item smartphone">
+                <li class="navigation__contacts-item">
+                    <a class="navigation__contacts-item-link" href="tel:+380961111111">
+                        <svg class="navigation__contact-icon smartphone">
                             <use href="./images/portfolio/icon/icons.svg#icon-smartphone"></use>
                         </svg> 
                         +38 096 111 11 11
@@ -47,7 +47,7 @@
                 <section class="main-decision-section">
                     <div class="container">
                         <h1 class="main-title-business">Эффективные решения <br> для вашего бизнеса</h1>
-                        <button data-modal-open class="model-button button" type="button">Заказать услугу</button>
+                        <button data-modal-open class="btn model-button button" type="button">Заказать услугу</button>
                        
                     </div>
                 </section>
@@ -323,50 +323,51 @@
         </main>
         <footer class="footer">
             <div class="container flex-container">
-                <div class="footer-adress">
-                    <a class="footer-logo" lang="en" href=""><span class="logo-web">Web</span>Studio</a>
+                <div class="footer__adress">
+                    <a class="footer__logo logo" lang="en" href=""><span class="logo__accent">Web</span>Studio</a>
                     <address class="address">
                         <ul class="list">
-                            <li class="address-list-item"> <a class="list-item adress map" href="https://goo.gl/maps/zFuHG1yWftqur64G7"
-                                    target="_blank" rel="noopener norefferer">г. Киев, пр-т
+                            <li class="address__item"> <a class="address__link map" href="https://goo.gl/maps/zFuHG1yWftqur64G7"
+                                    target="_blank" rel="noopener norefferer">г.
+                                    Киев, пр-т
                                     Леси Украинки, 26</a></li>
-                            <li class="address-list-item">
-                                <a class="list-item" href="mailto:info@example.com ">info@example.com</a>
+                            <li class="address__item">
+                                <a class="address__link" href="mailto:info@example.com ">info@example.com</a>
                             </li>
-                            <li class="address-list-item">
-                                <a class="list-item" href="tel:+380991111111">+38 099 111 11 11</a>
+                            <li class="address__item">
+                                <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
-                <div class="footer-media">
-                    <section class="join-section">
-                        <h2 class="join-section-title">Присоединяйтесь</h2>
-                        <ul class="join-media-footer list">
-                            <li class="media-footer-list">
-                                <a class="media-footer-link" href="">
-                                    <svg class="icon-media-footer">
+                <div class="media">
+                    <section class="media__section">
+                        <h2 class="media__title">Присоединяйтесь</h2>
+                        <ul class="media-list list">
+                            <li class="media__item">
+                                <a class="media__link" href="">
+                                    <svg class="media__icon">
                                         <use href="./images/portfolio/icon/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="media-footer-list" >
-                                <a class="media-footer-link" href="">
-                                    <svg class="icon-media-footer">
+                            <li class="media__item">
+                                <a class="media__link" href="">
+                                    <svg class="media__icon">
                                         <use href="./images/portfolio/icon/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="media-footer-list">
-                                <a class="media-footer-link" href="">
-                                    <svg class="icon-media-footer">
+                            <li class="media__item">
+                                <a class="media__link" href="">
+                                    <svg class="media__icon">
                                         <use href="./images/portfolio/icon/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="media-footer-list" >
-                                <a class="media-footer-link" href="">
-                                    <svg class="icon-media-footer">
+                            <li class="media__item">
+                                <a class="media__link" href="">
+                                    <svg class="media__icon">
                                         <use href="./images/portfolio/icon/icons.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -374,14 +375,14 @@
                         </ul>
                     </section>
                 </div>
-                <form class="footer-form">
-                    <p class="footer-form-text">Подпишитесь на рассылку</p>
-                    <div class="footer-form-container">
-                        <label class="footer-form-label">
-                            <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
+                <form class="footer__form">
+                    <p class="footer__form--title">Подпишитесь на рассылку</p>
+                    <div class="footer__form--container">
+                        <label class="footer__label">
+                            <input class="footer__input" type="email" name="user-email" placeholder="E-mail">
                         </label>
-                        <button class="footer-form-btn" type="submit"><span class="footer-form-btn-text">Подписаться</span>
-                            <svg class="footer-icon-send" width="24" height="24">
+                        <button class="btn footer__btn" type="submit"><span class="footer__btn--text">Подписаться</span>
+                            <svg class="footer__icon--form" width="24" height="24">
                                 <use href="./images/portfolio/icon/icons.svg#icon-icon-send"></use>
                             </svg>
                         </button>
@@ -391,50 +392,50 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="close-modal-button" data-modal-close type="button">
-                    <svg class="close-modal-icon">
+                <button class="close modal__button" data-modal-close type="button">
+                    <svg class="close__icon">
                         <use href="./images/portfolio/icon/close-icon.svg#icon-close-icon"></use>
                     </svg>
                 </button>
-                <form class="form-modal">
-                    <p class="form-modal-text">Оставьте свои данные, мы вам перезвоним</p>
-                    <label class="form-modal-item">
-                        <span class="form-modal-prompt">Имя</span>
-                        <span class="form-modal-icon-wrapper">
-                            <input class="form-modal-input" type="text" pattern="[a-zA-Z]*" name="username"  title="Elena" autofocus>
-                            <svg class="form-modal-icon person-black">
+                <form class="modal__form">
+                    <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+                    <label class="modal__label">
+                        <span class="modal__prompt">Имя</span>
+                        <span class="modal__icon-wrapper">
+                            <input class="modal__input" type="text" pattern="[a-zA-Z]*" name="username"  title="Elena" autofocus>
+                            <svg class="modal__icon person-black">
                                 <use href="./images/portfolio/icon/icons.svg#icon-person-black-icon"></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="form-modal-item">
-                        <span class="form-modal-prompt">Телефон</span>
-                        <span class="form-modal-icon-wrapper">
-                            <input class="form-modal-input" type="tel" pattern="[+xxx]-[xxx]-[xx]-[xx]*" title="+xxx-xxx-xx-xx" name="phone-number" >
-                            <svg class="form-modal-icon phone-black">
+                    <label class="modal__label">
+                        <span class="modal__prompt">Телефон</span>
+                        <span class="modal__icon-wrapper">
+                            <input class="modal__input" type="tel" pattern="[+xxx]-[xxx]-[xx]-[xx]*" title="+xxx-xxx-xx-xx" name="phone-number" >
+                            <svg class="modal__icon phone-black">
                                 <use href="./images/portfolio/icon/icons.svg#icon-phone-black-icon"></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="form-modal-item">
-                        <span class="form-modal-prompt">Почта</span>
-                        <span class="form-modal-icon-wrapper">
-                            <input class="form-modal-input" type="email" name="user-email">
-                            <svg class="form-modal-icon email-black">
+                    <label class="modal__label">
+                        <span class="modal__prompt">Почта</span>
+                        <span class="modal__icon-wrapper">
+                            <input class="modal__input" type="email" name="user-email">
+                            <svg class="modal__icon email-black">
                                 <use href="./images/portfolio/icon/icons.svg#icon-email-black-icon"></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="form-modal-textarea">
-                        <span class="form-modal-prompt">Комментарий</span>
-                        <textarea class="form-modal-comment" placeholder="Введите текст"></textarea>
+                    <label class="modal__textarea">
+                        <span class="modal__prompt">Комментарий</span>
+                        <textarea class="modal__comment" placeholder="Введите текст"></textarea>
                     </label>
-                    <label class="form-modal-checkbox" for="checkbox">
-                        <input id="checkbox" class="form-input-checkbox" type="checkbox" name="comment" required>
-                        <span class="icon-check"></span>
-                        <span class="form-checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="form-checkbox-link" href="">Условия договора</a></span>
+                    <label class="checkbox" for="checkbox">
+                        <input id="checkbox" class="checkbox__input" type="checkbox" name="comment" required>
+                        <span class="checkbox__custom"></span>
+                        <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="">Условия договора</a></span>
                     </label>
-                    <button class="form-modal-btn" type="submit">Отправить</button>
+                    <button class="modal__btn btn" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
