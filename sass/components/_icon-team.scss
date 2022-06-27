@@ -1,4 +1,4 @@
-.icon-team {
+.social-media__icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
@@ -6,17 +6,17 @@
 
 
 
-.icon-team-network-list {
+.social-media {
     display: flex;
     justify-content: center;
 }
 
 
-.icon-team-network-item:not(:last-child) {
+.social-media__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.icon-background-team {
+.social-media__link {
     height: 44px;
     width: 44px;
     display: flex;

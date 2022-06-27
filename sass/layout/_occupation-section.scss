@@ -1,4 +1,18 @@
-.example-images {
+.occupation-section {
+    padding-top: 0;
+}
+
+.occupation-section__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.occupation-section__list {
     display: flex;
     justify-content: center;
 
@@ -6,17 +20,17 @@
 
 
 
-.example-img-item {
+.occupation-section__item {
     position: relative;
 
 
     &:not(:last-child) {
-            margin-right: 30px;
-    
-        }
+        margin-right: 30px;
+
+    }
 }
 
-.example-text {
+.occupation-section__text {
     position: absolute;
     left: 0;
     top: 100%;

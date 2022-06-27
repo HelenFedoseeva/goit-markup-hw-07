@@ -1,4 +1,4 @@
-.studio-team-list-item {
+.team-section__item{
     background-color: #fff;
     text-align: center;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14);
@@ -9,7 +9,7 @@
         }
 }
 
-.team-title {
+.team-section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -19,18 +19,18 @@
     margin-bottom: 50px;
 }
 
-.team-list {
+.team-section__list {
     display: flex;
     justify-content: center;
 }
 
 
 
-.team-description-section {
+.team-description-container {
     padding: 30px 0;
 }
 
-.team-person-title {
+.team-description__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -39,7 +39,7 @@
     margin-bottom: 10px;
 }
 
-.team-person-description {
+.team-description__person {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
