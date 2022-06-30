@@ -1,11 +1,11 @@
 
-.main-portfolio-overlay-container {
+.portfolio__overlay-container {
     position: relative;
     overflow: hidden;
 
 }
 
-.main-portfolio-overlay {
+.portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,8 +27,8 @@
     padding: 63px 24px;
 
 
-    .main-portfolio-list-link:hover &,
-        .main-portfolio-list-link:focus & {
+    .portfolio__link:hover &,
+    .portfolio__link:focus & {
             transform: translateY(0%);
         }
 

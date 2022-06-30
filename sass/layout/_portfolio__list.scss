@@ -1,11 +1,11 @@
-.main-portfolio-list {
+.portfolio__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 
 }
 
-.main-portfolio-list-item {
+.portfolio__item {
     margin-bottom: 30px;
 
     &:not(:nth-child(3n)) {
@@ -19,7 +19,7 @@
 
 
 
-.main-portfolio-list-link {
+.portfolio__link {
     display: block;
     text-decoration: none;
 
@@ -33,8 +33,17 @@
         }
 }
 
+.portfolio__list-description {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid var(--border-line-color);
+    border-bottom: 1px solid var(--border-line-color);
+    border-left: 1px solid var(--border-line-color);
+}
 
-.portfolio-title {
+.portfolio__list-company {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -43,7 +52,7 @@
     margin-bottom: 4px;
 }
 
-.portfolio-text {
+.portfolio__list-about {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;

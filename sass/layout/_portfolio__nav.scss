@@ -1,15 +1,15 @@
-.portfolio-nav-list {
+.portfolio__nav {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 
 }
 
-.portfolio-nav-list-item:not(:last-child) {
+.portfolio__nav-item:not(:last-child) {
     margin-right: 8px;
 }
 
-.portfolio-main-button {
+.portfolio__nav-button {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
